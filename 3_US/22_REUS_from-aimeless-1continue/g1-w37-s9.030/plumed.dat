@@ -1,0 +1,764 @@
+HILLS RESTART HEIGHT 0.000 W_STRIDE 50
+#WELLTEMPERED SIMTEMP 300 BIASFACTOR 50
+
+PRINT W_STRIDE 1
+
+C->
+1 
+C<-
+
+Cl->
+2 3 
+Cl<-
+
+O->
+LOOP 204 301 1
+O<-
+
+K->
+203 
+K<-
+
+H->
+LOOP 4 202  1    
+H<-
+
+SPATHCOORDTABLE NSP 5 LIST <C> <Cl> <O> <K> <H> NN 8 MM 14 R_0 3.40 4.16 3.40 4.16 2.83 4.16 4.16 4.16 3.40 3.40 4.16 2.83 4.16 3.40 2.65 LAMBDA 71.6983  SIGMA 0.03
+ZPATHCOORDTABLE NSP 5 LIST <C> <Cl> <O> <K> <H> NN 8 MM 14 R_0 3.40 4.16 3.40 4.16 2.83 4.16 4.16 4.16 3.40 3.40 4.16 2.83 4.16 3.40 2.65 LAMBDA 71.6983  SIGMA 0.05
+
+COORD LIST 1  1   NN 8 MM 14 R_0 4.16
+COORD LIST 1 <Cl> NN 8 MM 14 R_0 4.16
+COORD LIST 1 <O>  NN 8 MM 14 R_0 3.40
+COORD LIST 1 <K>  NN 8 MM 14 R_0 4.16
+COORD LIST 1 <H>  NN 8 MM 14 R_0 2.83
+
+COORD LIST 2 <C>  NN 8 MM 14 R_0 4.16
+COORD LIST 2  3   NN 8 MM 14 R_0 4.16
+COORD LIST 2 <O>  NN 8 MM 14 R_0 4.16
+COORD LIST 2 <K>  NN 8 MM 14 R_0 4.16
+COORD LIST 2 <H>  NN 8 MM 14 R_0 3.40
+
+COORD LIST 3 <C>  NN 8 MM 14 R_0 4.16
+COORD LIST 3  2   NN 8 MM 14 R_0 4.16
+COORD LIST 3 <O>  NN 8 MM 14 R_0 4.16
+COORD LIST 3 <K>  NN 8 MM 14 R_0 4.16
+COORD LIST 3 <H>  NN 8 MM 14 R_0 3.40
+
+DISTANCE LIST 1 3
+DISTANCE LIST 1 2
+
+#UWALL CV 18 LIMIT  7.0 KAPPA 0.01 EXP 2
+#UWALL CV 19 LIMIT  7.0 KAPPA 0.01 EXP 2
+LWALL  CV 1  LIMIT    9.250  KAPPA    0.061  EXP 2
+UWALL  CV 1  LIMIT    9.250  KAPPA    0.061  EXP 2
+
+LWALL  CV 2  LIMIT  -10.   KAPPA  50     EXP 2
+UWALL  CV 2  LIMIT    0.35 KAPPA  50     EXP 2
+ 
+ENDMETA
+# s0=	 9.800
+# s0=	 9.800
+# s0=	 9.800
+# s0=	 9.800
+# s0=	 9.800
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Fri Feb 19 14:44:19 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 15:10:19 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 15:24:38 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Fri Feb 19 15:38:47 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Fri Feb 19 15:53:13 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Fri Feb 19 16:15:02 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Fri Feb 19 16:38:56 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Fri Feb 19 16:53:56 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Fri Feb 19 17:12:56 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Fri Feb 19 17:26:56 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Fri Feb 19 17:40:56 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Fri Feb 19 17:55:37 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Fri Feb 19 18:09:46 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Fri Feb 19 18:23:54 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Fri Feb 19 18:38:12 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Fri Feb 19 18:52:53 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 19:07:48 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 19:23:45 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Fri Feb 19 19:41:24 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Fri Feb 19 19:57:02 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Fri Feb 19 20:13:20 CET 2021
+#exchange g1-w2-s9.690 g1-w3-s9.800 Fri Feb 19 20:13:20 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Fri Feb 19 20:28:54 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 20:45:08 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Fri Feb 19 20:59:49 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Fri Feb 19 21:14:10 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Fri Feb 19 21:28:10 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Fri Feb 19 21:42:22 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Fri Feb 19 21:57:04 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 22:12:11 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Fri Feb 19 22:28:21 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Fri Feb 19 22:54:10 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Fri Feb 19 23:10:16 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Fri Feb 19 23:26:24 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Fri Feb 19 23:42:00 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Fri Feb 19 23:57:36 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sat Feb 20 00:13:21 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sat Feb 20 00:28:33 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sat Feb 20 00:44:31 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sat Feb 20 01:01:27 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Sat Feb 20 01:17:42 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Sat Feb 20 01:42:24 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sat Feb 20 01:59:10 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Sat Feb 20 02:40:24 CET 2021
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sat Feb 20 02:40:24 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sat Feb 20 02:59:04 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 03:18:44 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sat Feb 20 03:35:25 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sat Feb 20 03:50:36 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sat Feb 20 04:06:26 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 04:20:49 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sat Feb 20 05:05:44 CET 2021
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sat Feb 20 05:05:44 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Sat Feb 20 05:28:53 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sat Feb 20 05:44:54 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 06:04:18 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sat Feb 20 06:19:07 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sat Feb 20 06:40:19 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 06:56:21 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sat Feb 20 07:15:41 CET 2021
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 07:15:41 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sat Feb 20 07:30:43 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sat Feb 20 07:47:03 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sat Feb 20 08:05:17 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sat Feb 20 08:29:17 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 08:45:40 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sat Feb 20 09:05:04 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sat Feb 20 09:21:07 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sat Feb 20 09:38:55 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sat Feb 20 09:53:16 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 10:08:48 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 10:31:46 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sat Feb 20 10:53:26 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sat Feb 20 11:17:15 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 11:35:48 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sat Feb 20 11:51:22 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 12:06:21 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 12:24:38 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 12:42:43 CET 2021
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 12:42:43 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sat Feb 20 13:02:07 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sat Feb 20 13:22:59 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sat Feb 20 13:40:09 CET 2021
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 13:40:09 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sat Feb 20 14:00:30 CET 2021
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sat Feb 20 14:00:30 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 14:22:16 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 14:39:07 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sat Feb 20 14:54:14 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sat Feb 20 15:09:28 CET 2021
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sat Feb 20 15:09:28 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sat Feb 20 15:26:28 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sat Feb 20 15:54:43 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sat Feb 20 16:10:25 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sat Feb 20 16:25:57 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sat Feb 20 16:41:47 CET 2021
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sat Feb 20 16:41:47 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sat Feb 20 17:13:44 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sat Feb 20 17:29:54 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 17:46:01 CET 2021
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sat Feb 20 17:46:01 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 18:01:59 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w1-s9.470 Sat Feb 20 18:33:51 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Sat Feb 20 18:49:53 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sat Feb 20 19:07:23 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 19:23:36 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sat Feb 20 19:39:25 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sat Feb 20 19:55:13 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sat Feb 20 20:11:17 CET 2021
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sat Feb 20 20:11:17 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 20:27:18 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 20:43:09 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sat Feb 20 20:59:01 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sat Feb 20 21:14:59 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sat Feb 20 21:30:51 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sat Feb 20 21:46:28 CET 2021
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sat Feb 20 21:46:29 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sat Feb 20 22:02:22 CET 2021
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sat Feb 20 22:02:22 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sat Feb 20 22:36:22 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sat Feb 20 22:53:17 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sat Feb 20 23:10:28 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Sat Feb 20 23:31:05 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Sat Feb 20 23:48:46 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sun Feb 21 00:05:01 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Sun Feb 21 00:20:44 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sun Feb 21 00:36:37 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sun Feb 21 00:53:36 CET 2021
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 00:53:36 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sun Feb 21 01:10:13 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w1-s9.470 Sun Feb 21 01:27:11 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sun Feb 21 01:42:53 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 01:59:49 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 02:19:48 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sun Feb 21 02:46:32 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sun Feb 21 03:07:03 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sun Feb 21 03:31:43 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sun Feb 21 03:54:04 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sun Feb 21 04:10:09 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w4-s9.910 Sun Feb 21 04:26:30 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sun Feb 21 04:42:17 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w4-s9.910 Sun Feb 21 04:58:05 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 05:14:25 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w5-s10.130 Sun Feb 21 05:35:41 CET 2021
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sun Feb 21 05:35:41 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sun Feb 21 05:51:44 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sun Feb 21 06:08:54 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sun Feb 21 06:27:22 CET 2021
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sun Feb 21 06:27:22 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sun Feb 21 06:49:45 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sun Feb 21 07:05:42 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w2-s9.690 Sun Feb 21 07:21:30 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sun Feb 21 07:37:22 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sun Feb 21 07:53:15 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 08:10:41 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sun Feb 21 08:27:01 CET 2021
+# s0=	 9.800
+#exchange g1-w1-s9.470 g1-w3-s9.800 Sun Feb 21 08:53:10 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sun Feb 21 09:13:53 CET 2021
+#exchange g1-w2-s9.690 g1-w5-s10.130 Sun Feb 21 09:13:53 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 09:30:22 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 10:00:23 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 10:25:31 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 10:56:05 CET 2021
+#exchange g1-w4-s9.910 g1-w2-s9.690 Sun Feb 21 10:56:06 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sun Feb 21 11:18:45 CET 2021
+#exchange g1-w3-s9.800 g1-w1-s9.470 Sun Feb 21 11:18:45 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w1-s9.470 Sun Feb 21 11:35:37 CET 2021
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sun Feb 21 11:35:38 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 11:52:38 CET 2021
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sun Feb 21 11:52:38 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 12:09:38 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Sun Feb 21 12:25:40 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 13:11:48 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 13:31:47 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sun Feb 21 13:54:53 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 14:28:40 CET 2021
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sun Feb 21 14:28:40 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 14:45:03 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 15:04:48 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sun Feb 21 15:25:59 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Sun Feb 21 16:02:21 CET 2021
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sun Feb 21 16:02:21 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Sun Feb 21 16:18:36 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Sun Feb 21 16:34:40 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 16:51:34 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 17:08:33 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 17:26:35 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 17:45:08 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sun Feb 21 18:11:12 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 18:32:57 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 18:50:07 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 19:06:58 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 19:23:40 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 19:40:00 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 20:13:18 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 20:29:35 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Sun Feb 21 20:52:20 CET 2021
+# s0=	 9.800
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Sun Feb 21 21:24:27 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sun Feb 21 21:41:17 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Sun Feb 21 21:58:31 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 22:15:35 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 22:32:59 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Sun Feb 21 22:49:02 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Sun Feb 21 23:05:35 CET 2021
+#exchange g1-w2-s9.690 g1-w4-s9.910 Sun Feb 21 23:05:35 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sun Feb 21 23:21:45 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Sun Feb 21 23:38:05 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Sun Feb 21 23:54:11 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Mon Feb 22 00:10:17 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Mon Feb 22 00:26:28 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Mon Feb 22 00:42:33 CET 2021
+#exchange g1-w2-s9.690 g1-w5-s10.130 Mon Feb 22 00:42:33 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Mon Feb 22 00:58:37 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Mon Feb 22 01:14:35 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Mon Feb 22 01:30:45 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w3-s9.800 Mon Feb 22 01:46:57 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Mon Feb 22 02:03:07 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Mon Feb 22 02:19:09 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Mon Feb 22 02:35:30 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Mon Feb 22 02:51:42 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Mon Feb 22 03:07:51 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Mon Feb 22 03:23:57 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w3-s9.800 Mon Feb 22 03:40:02 CET 2021
+#exchange g1-w3-s9.800 g1-w5-s10.130 Mon Feb 22 03:40:02 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Mon Feb 22 03:55:52 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Mon Feb 22 04:12:00 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Mon Feb 22 04:27:40 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Mon Feb 22 04:44:00 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Mon Feb 22 05:00:20 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Mon Feb 22 05:16:26 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w4-s9.910 Mon Feb 22 05:32:34 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Mon Feb 22 05:48:43 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Mon Feb 22 06:04:56 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w4-s9.910 Mon Feb 22 06:20:50 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w2-s9.690 Mon Feb 22 06:37:00 CET 2021
+# s0=	 9.800
+#exchange g1-w4-s9.910 g1-w5-s10.130 Mon Feb 22 06:53:17 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Mon Feb 22 07:09:36 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Mon Feb 22 07:25:40 CET 2021
+#exchange g1-w5-s10.130 g1-w2-s9.690 Mon Feb 22 07:25:40 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w2-s9.690 Mon Feb 22 07:41:54 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Mon Feb 22 07:58:03 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Mon Feb 22 08:14:00 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Mon Feb 22 08:30:16 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w3-s9.800 Mon Feb 22 08:46:29 CET 2021
+# s0=	 9.800
+#exchange g1-w3-s9.800 g1-w5-s10.130 Mon Feb 22 09:02:37 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Mon Feb 22 09:18:44 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Mon Feb 22 09:34:53 CET 2021
+# s0=	 9.800
+#exchange g1-w2-s9.690 g1-w5-s10.130 Mon Feb 22 09:51:10 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Mon Feb 22 10:07:22 CET 2021
+# s0=	 9.800
+#exchange g1-w5-s10.130 g1-w2-s9.690 Mon Feb 22 10:25:05 CET 2021
+#exchange g1-w2-s9.690 g1-w3-s9.800 Mon Feb 22 10:25:05 CET 2021
+# s0=	 9.800
+#exchange g1-w53-s9.800 g1-w41-s9.910 Wed Feb 24 12:04:08 CET 2021
+# s0=	 9.800
+#exchange g1-w41-s9.910 g1-w43-s10.350 Wed Feb 24 12:45:09 CET 2021
+# s0=	 9.800
+#exchange g1-w53-s9.800 g1-w43-s10.350 Wed Feb 24 13:20:22 CET 2021
+# s0=	 9.800
+#exchange g1-w43-s10.350 g1-w53-s9.800 Wed Feb 24 13:45:23 CET 2021
+# s0=	 9.800
+#exchange g1-w43-s10.350 g1-w41-s9.910 Wed Feb 24 14:05:51 CET 2021
+# s0=	 9.800
+#exchange g1-w41-s9.910 g1-w43-s10.350 Wed Feb 24 14:33:10 CET 2021
+# s0=	 9.800
+#exchange g1-w53-s9.800 g1-w43-s10.350 Wed Feb 24 15:19:24 CET 2021
+#exchange g1-w41-s9.910 g1-w53-s9.800 Wed Feb 24 15:19:24 CET 2021
+# s0=	 9.800
+#exchange g1-w43-s10.350 g1-w41-s9.910 Wed Feb 24 15:42:29 CET 2021
+# s0=	 9.800
+#exchange g1-w43-s10.350 g1-w41-s9.910 Wed Feb 24 16:19:23 CET 2021
+# s0=	 9.800
+#exchange g1-w27-s6.830 g1-w41-s9.910 Wed Feb 24 17:00:12 CET 2021
+# s0=	 9.800
+#exchange g1-w27-s6.830 g1-w41-s9.910 Wed Feb 24 17:16:58 CET 2021
+# s0=	 9.800
+#exchange g1-w41-s9.910 g1-w44-s10.570 Wed Feb 24 17:33:13 CET 2021
+# s0=	 9.800
+#exchange g1-w44-s10.570 g1-w53-s9.800 Wed Feb 24 17:49:35 CET 2021
+# s0=	 9.800
+#exchange g1-w37-s9.030 g1-w53-s9.800 Wed Feb 24 18:05:32 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Wed Feb 24 21:22:41 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Wed Feb 24 22:02:25 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Wed Feb 24 22:22:26 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Wed Feb 24 22:39:41 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Wed Feb 24 23:29:07 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Wed Feb 24 23:45:35 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 00:09:34 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 00:38:02 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 01:08:36 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 01:31:06 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 02:08:52 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 02:26:04 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 03:06:17 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 03:39:45 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 04:04:04 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 04:28:55 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 05:07:53 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 05:45:01 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 06:14:01 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 06:39:17 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 07:31:06 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 08:13:47 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 08:41:59 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 09:16:03 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.250 Thu Feb 25 09:37:24 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w39-s9.470 Fri Feb 26 10:15:10 CET 2021
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w43-s10.350 Fri Feb 26 11:01:46 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w53-s9.580 Fri Feb 26 11:43:59 CET 2021
+#exchange g1-w53-s9.580 g1-w39-s9.470 Fri Feb 26 11:43:59 CET 2021
+#exchange g1-w39-s9.470 g1-w41-s9.910 Fri Feb 26 11:44:00 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.580 Fri Feb 26 14:03:29 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w53-s9.580 g1-w27-s6.830 Fri Feb 26 14:59:41 CET 2021
+# s0=	 9.250
+#exchange g1-w27-s6.830 g1-w53-s9.580 Fri Feb 26 15:24:46 CET 2021
+# s0=	 9.250
+#exchange g1-w53-s9.580 g1-w43-s10.350 Fri Feb 26 15:49:41 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w39-s9.470 Fri Feb 26 16:26:49 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w41-s9.910 Fri Feb 26 18:41:48 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w53-s9.580 Fri Feb 26 22:04:38 CET 2021
+# s0=	 9.250
+#exchange g1-w53-s9.580 g1-w41-s9.910 Fri Feb 26 22:39:06 CET 2021
+# s0=	 9.250
+#exchange g1-w41-s9.910 g1-w43-s10.350 Fri Feb 26 23:23:22 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w53-s9.580 Fri Feb 26 23:53:47 CET 2021
+#exchange g1-w53-s9.580 g1-w37-s9.030 Fri Feb 26 23:53:47 CET 2021
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w43-s10.350 Sat Feb 27 00:28:29 CET 2021
+#exchange g1-w43-s10.350 g1-w53-s9.580 Sat Feb 27 00:28:29 CET 2021
+# s0=	 9.250
+#exchange g1-w53-s9.580 g1-w37-s9.030 Sat Feb 27 01:12:59 CET 2021
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w53-s9.580 Sat Feb 27 01:52:46 CET 2021
+# s0=	 9.250
+#exchange g1-w53-s9.580 g1-w39-s9.470 Sat Feb 27 02:33:39 CET 2021
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w37-s9.030 Sat Feb 27 03:10:17 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w39-s9.470 Sat Feb 27 05:22:03 CET 2021
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w43-s10.350 Sat Feb 27 05:54:14 CET 2021
+#exchange g1-w43-s10.350 g1-w37-s9.030 Sat Feb 27 05:54:14 CET 2021
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w39-s9.470 Sat Feb 27 06:27:21 CET 2021
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w37-s9.030 Sat Feb 27 06:51:26 CET 2021
+#exchange g1-w37-s9.030 g1-w43-s10.350 Sat Feb 27 06:51:26 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w39-s9.470 Sat Feb 27 07:14:38 CET 2021
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w43-s10.350 Sat Feb 27 07:44:46 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w37-s9.030 Sat Feb 27 08:03:38 CET 2021
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w43-s10.350 Sat Feb 27 08:29:43 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w44-s10.570 Sat Feb 27 09:11:28 CET 2021
+# s0=	 9.250
+#exchange g1-w44-s10.570 g1-w37-s9.030 Sat Feb 27 09:55:34 CET 2021
+#exchange g1-w37-s9.030 g1-w47-s11.230 Sat Feb 27 09:55:34 CET 2021
+# s0=	 9.250
+#exchange g1-w47-s11.230 g1-w44-s10.570 Sat Feb 27 10:53:44 CET 2021
+# s0=	 9.250
+#exchange g1-w44-s10.570 g1-w43-s10.350 Sat Feb 27 11:40:37 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w47-s11.230 Tue Mar 2 10:01:18 CET 2021
+#exchange g1-w47-s11.230 g1-w37-s9.030 Tue Mar 2 10:01:18 CET 2021
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w43-s10.350 Tue Mar 2 10:46:51 CET 2021
+#exchange g1-w43-s10.350 g1-w39-s9.470 Tue Mar 2 10:46:51 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w43-s10.350 Tue Mar 2 12:47:55 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w39-s9.470 Tue Mar 2 13:40:10 CET 2021
+#exchange g1-w39-s9.470 g1-w47-s11.230 Tue Mar 2 13:40:10 CET 2021
+# s0=	 9.250
+#exchange g1-w47-s11.230 g1-w43-s10.350 Tue Mar 2 14:30:29 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w47-s11.230 Tue Mar 2 15:23:40 CET 2021
+# s0=	 9.250
+#exchange g1-w47-s11.230 g1-w39-s9.470 Tue Mar 2 21:43:34 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w54-s9.140 g1-w39-s9.470 Tue Mar 2 23:12:07 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w54-s9.140 Wed Mar 3 00:45:15 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w39-s9.470 g1-w37-s9.030 Wed Mar 3 01:42:08 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w54-s9.140 g1-w37-s9.030 Wed Mar 3 02:49:14 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w54-s9.140 Wed Mar 3 03:48:15 CET 2021
+# s0=	 9.250
+#exchange g1-w35-s8.590 g1-w37-s9.030 Wed Mar 3 04:12:33 CET 2021
+# s0=	 9.250
+#exchange g1-w54-s9.140 g1-w35-s8.590 Wed Mar 3 04:37:56 CET 2021
+# s0=	 9.250
+#exchange g1-w54-s9.140 g1-w43-s10.350 Wed Mar 3 05:07:48 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w43-s10.350 Wed Mar 3 06:19:39 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w37-s9.030 Wed Mar 3 06:44:38 CET 2021
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w43-s10.350 Wed Mar 3 07:50:25 CET 2021
+# s0=	 9.250
+#exchange g1-w43-s10.350 g1-w37-s9.030 Wed Mar 3 08:40:21 CET 2021
+# s0=	 9.250
+# s0=	 9.250
+# s0=	 9.250
+#exchange g1-w37-s9.030 g1-w43-s10.350 Wed Mar 3 11:35:22 CET 2021

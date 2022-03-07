@@ -1,0 +1,153 @@
+HILLS RESTART HEIGHT 0.000 W_STRIDE 50
+#WELLTEMPERED SIMTEMP 300 BIASFACTOR 50
+
+PRINT W_STRIDE 1
+
+C->
+1 
+C<-
+
+Cl->
+2 3 
+Cl<-
+
+O->
+LOOP 204 301 1
+O<-
+
+K->
+203 
+K<-
+
+H->
+LOOP 4 202  1    
+H<-
+
+SPATHCOORDTABLE NSP 5 LIST <C> <Cl> <O> <K> <H> NN 8 MM 14 R_0 3.40 4.16 3.40 4.16 2.83 4.16 4.16 4.16 3.40 3.40 4.16 2.83 4.16 3.40 2.65 LAMBDA 22.7842  SIGMA 0.03
+ZPATHCOORDTABLE NSP 5 LIST <C> <Cl> <O> <K> <H> NN 8 MM 14 R_0 3.40 4.16 3.40 4.16 2.83 4.16 4.16 4.16 3.40 3.40 4.16 2.83 4.16 3.40 2.65 LAMBDA 22.7842  SIGMA 0.05
+
+COORD LIST 1  1   NN 8 MM 14 R_0 4.16
+COORD LIST 1 <Cl> NN 8 MM 14 R_0 4.16
+COORD LIST 1 <O>  NN 8 MM 14 R_0 3.40
+COORD LIST 1 <K>  NN 8 MM 14 R_0 4.16
+COORD LIST 1 <H>  NN 8 MM 14 R_0 2.83
+
+COORD LIST 2 <C>  NN 8 MM 14 R_0 4.16
+COORD LIST 2  3   NN 8 MM 14 R_0 4.16
+COORD LIST 2 <O>  NN 8 MM 14 R_0 4.16
+COORD LIST 2 <K>  NN 8 MM 14 R_0 4.16
+COORD LIST 2 <H>  NN 8 MM 14 R_0 3.40
+
+COORD LIST 3 <C>  NN 8 MM 14 R_0 4.16
+COORD LIST 3  2   NN 8 MM 14 R_0 4.16
+COORD LIST 3 <O>  NN 8 MM 14 R_0 4.16
+COORD LIST 3 <K>  NN 8 MM 14 R_0 4.16
+COORD LIST 3 <H>  NN 8 MM 14 R_0 3.40
+
+DISTANCE LIST 1 3
+DISTANCE LIST 1 2
+
+#UWALL CV 18 LIMIT  7.0 KAPPA 0.01 EXP 2
+#UWALL CV 19 LIMIT  7.0 KAPPA 0.01 EXP 2
+LWALL  CV 1  LIMIT    2.772  KAPPA    0.096  EXP 2
+UWALL  CV 1  LIMIT    2.772  KAPPA    0.096  EXP 2
+
+LWALL  CV 2  LIMIT  -10.   KAPPA  50     EXP 2
+UWALL  CV 2  LIMIT    0.45 KAPPA  50     EXP 2
+ 
+ENDMETA
+# s0=	 2.772
+#exchange g1-w9-s2.596 g1-w10-s2.772 Wed Feb 3 21:33:05 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w9-s2.596 g1-w11-s2.948 Sun Feb 7 05:33:56 CET 2021
+# s0=	 2.772
+#exchange g1-w11-s2.948 g1-w9-s2.596 Sun Feb 7 06:47:08 CET 2021
+# s0=	 2.772
+#exchange g1-w8-s2.420 g1-w9-s2.596 Sun Feb 7 08:14:50 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w8-s2.420 g1-w11-s2.948 Sun Feb 7 09:33:17 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w11-s2.948 g1-w8-s2.420 Sun Feb 7 11:17:21 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w8-s2.420 g1-w11-s2.948 Sun Feb 7 18:33:16 CET 2021
+# s0=	 2.772
+#exchange g1-w11-s2.948 g1-w8-s2.420 Sun Feb 7 19:11:34 CET 2021
+# s0=	 2.772
+#exchange g1-w8-s2.420 g1-w11-s2.948 Sun Feb 7 20:05:57 CET 2021
+#exchange g1-w11-s2.948 g1-w15-s3.652 Sun Feb 7 20:05:58 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w9-s2.596 g1-w15-s3.652 Sun Feb 7 21:32:38 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w9-s2.596 g1-w11-s2.948 Mon Feb 8 06:26:02 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w11-s2.948 g1-w9-s2.596 Mon Feb 8 09:22:49 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w9-s2.596 g1-w11-s2.948 Mon Feb 8 11:18:47 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w11-s2.948 g1-w17-s4.004 Mon Feb 8 13:44:16 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w17-s4.004 g1-w11-s2.948 Mon Feb 8 14:50:34 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+#exchange g1-w11-s2.948 g1-w17-s4.004 Tue Feb 9 03:07:25 CET 2021
+# s0=	 2.772
+#exchange g1-w10-s2.772 g1-w17-s4.004 Tue Feb 9 04:02:42 CET 2021
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
+# s0=	 2.772
